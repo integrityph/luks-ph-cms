@@ -1,0 +1,13 @@
+backend:
+  name: github
+  repo: integrityph/luks-ph-cms
+  branch: main
+media_folder: "public/static/images/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/static/images/uploads" 
+collections:
+  - name: "services"
+    label: "Services"
+    folder: src/services
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }

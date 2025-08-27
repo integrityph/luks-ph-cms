@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
@@ -585,30 +586,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="testimonial-one__bottom">
         <div
           class="testimonial-one__carousel thm-owl__carousel owl-theme owl-carousel"
-          data-owl-options='{
-								"items": 1,
-								"margin": 30,
-								"smartSpeed": 700,
-								"loop":true,
-								"autoplay": 6000,
-								"nav":false,
-								"dots":false,
-								"navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-								"responsive":{
-										"0":{
-												"items":1
-										},
-										"768":{
-												"items":2
-										},
-										"992":{
-												"items": 2
-										},
-										"1200":{
-												"items": 3
-										}
-								}
-						}'
+          data-owl-options='{"items":1,"margin":30,"smartSpeed":700,"loop":true,"autoplay":6000,"nav":false,"dots":false,"navText":["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],"responsive":{"0":{"items":1},"768":{"items":2},"992":{"items": 2},"1200":{"items": 3}}}'
         >
           <!--Testimonial One Single Start-->
           <div class="item">

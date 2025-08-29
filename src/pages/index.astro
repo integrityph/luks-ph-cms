@@ -1,6 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ServiceCard from "../component/ServiceCard.astro";
+
+const services = await getCollection("services");
+const randomizedServices = services
+  .map((service) => ({ service, sort: Math.random() }))
+  .sort((a, b) => a.sort - b.sort)
+  .map(({ service }) => service);
 ---
 
 <BaseLayout>
@@ -365,7 +372,55 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <span class="section-title__tagline">Our services</span>
         <h2 class="section-title__title">What We’re Offering</h2>
       </div>
-      <div class="row" id="services"></div>
+      <div class="row" id="services">
+        {
+          randomizedServices.map((service, index) => index < 3 && (
+            <div
+              class="col-xl-4 col-lg-4 wow fadeInUp animated"
+              data-wow-delay="300ms"
+              style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;"
+            >
+              <div class="services-one__single">
+                <div class="services-one__single-inner">
+                  <div class="services-one__shape-1">
+                    <img
+                      src="../../static/assets/images/shapes/services-one-shape-1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="services-one__shape-2">
+                    <img
+                      src="../../static/assets/images/shapes/services-one-shape-2 4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="services-one__img-box">
+                    <div class="services-one__img">
+                      <img
+                        src="../../static/assets/images/services/Emerald_Laser_Lipo.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="services-one__icon">
+                      <span class="icon-lotus" />
+                    </div>
+                  </div>
+                  <h3 class="services-one__title">
+                    <a href={`/services/${service.id}`}>{service.data.title}</a>
+                  </h3>
+                  <p class="services-one__text" />
+                  <div class="services-one__btn-box">
+                    <a href={`/services/${service.id}`} class="services-one__btn">
+                      See More
+                      <i class="icon-right-arrow" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
       <div class="welcome-one__btn-box1">
         <a href="/services/" class="welcome-one__btn thm-btn">Discover more</a>
       </div>

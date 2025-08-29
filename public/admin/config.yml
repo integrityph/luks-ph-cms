@@ -12,6 +12,12 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        fields:
+          - { label: "Source", name: "src", widget: "image" }
+          - { label: "Alt", name: "alt", widget: "string", required: false }
   - name: "categories"
     label: "Categories"
     folder: src/content/categories

@@ -1,0 +1,22 @@
+---
+const { service } = Astro.props;
+---
+<div class="accrodion">
+  <div
+    class="accrodion-title accordion-section wow fadeInUp animated"
+    data-wow-delay="100ms"
+    style="background-color: rgb(217, 234, 209); visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;"
+  >
+    <div class="service_title">
+      <span>{service.title}</span>
+      <span>{service.price}</span>
+    </div>
+  </div>
+  <div class="accrodion-content" style="display: none;">
+    <div class="inner">
+      <p>
+        {service.description}
+      </p>
+    </div>
+  </div>
+</div>

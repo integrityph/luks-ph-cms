@@ -1,5 +1,7 @@
 ---
+import { getCollection } from 'astro:content';
 
+const { pathname }  = Astro.url;
 ---
 
 <!doctype html>
@@ -220,20 +222,16 @@
                   ><i class="fa fa-bars"></i></a
                 >
                 <ul class="main-menu__list">
-                  <li class="current">
+                  <li class={pathname === "/" ? "current" : null}>
                     <a href="/">Home </a>
                   </li>
-                  <li class="dropdown">
-                    <a href="#">Our Services</a>
-                    <ul style="font-size: 15px;">
-                      <li><a href="/Spa_Treatment/">Spa Treatments</a></li>
-                      <li><a href="/Laser_Treatment/">Laser Treatments</a></li>
-                    </ul>
+                  <li class={pathname.startsWith("/services") || pathname.startsWith("/services") ? `dropdown current` : "dropdown"}>
+                    <a href="/services/">Our Services</a>
                   </li>
-                  <li class="">
+                  <li class={pathname.startsWith("/gallery") ? "current" : null}>
                     <a href="/gallery/">Gallery</a>
                   </li>
-                  <li class="">
+                  <li class={pathname.startsWith("/contact") ? "current" : null}>
                     <a href="/contact/">Contact</a>
                   </li>
                 </ul>

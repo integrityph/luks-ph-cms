@@ -5,6 +5,13 @@ backend:
 media_folder: "public/static/images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/static/images/uploads" 
 collections:
+  - name: "services"
+    label: "Services"
+    folder: src/content/services
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
   - name: "categories"
     label: "Categories"
     folder: src/content/categories
@@ -12,39 +19,39 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - label: "Treatment"
+        name: "treatment"
+        widget: "relation"
+        collection: "services"
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
       - label: "Banner"
         name: "banner"
         widget: "object"
         fields:
           - { label: "Source", name: "src", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string" }
+          - { label: "Alt", name: "alt", widget: "string", required: false }
       - label: "Photo"
         name: "photo"
         widget: "object"
         fields:
           - { label: "Source", name: "src", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string" }
+          - { label: "Alt", name: "alt", widget: "string", required: false }
       - label: "Icon"
         name: "icon"
         widget: "object"
         fields:
           - { label: "Source", name: "src", widget: "image" }
-          - { label: "Alt", name: "alt", widget: "string" }
+          - { label: "Alt", name: "alt", widget: "string", required: false }
+      - label: "Services"
+        name: "services"
+        widget: "list"
+        fields:
+        - { label: Title, name: title, widget: string }
+        - { label: "Description", name: "description", widget: "string"}
+        - { label: "Price", name: "price", widget: "string" }
+        - { label: "Status", name: "status", widget: "boolean" }
       - { label: "NISFL", name: "nisfl", widget: "boolean" }
       - { label: "Status", name: "status", widget: "boolean" }
-  - name: "services"
-    label: "Services"
-    folder: src/content/services
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - label: "Category"
-        name: "category"
-        widget: "relation"
-        collection: "categories"
-        search_fields: ["title"]
-        value_field: "title"
-        display_fields: ["title"]
-      - { label: "Description", name: "description", widget: "string"}
-      - { label: "Price", name: "price", widget: "number" }
-      - { label: "Status", name: "status", widget: "boolean" }
+      - { label: "Featured", name: "featured", widget: "boolean" }

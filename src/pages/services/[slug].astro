@@ -1,0 +1,74 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ServiceCard from "../../component/ServiceCard.astro";
+
+export async function getStaticPaths() {
+  const services = await getCollection("services");
+  return services.map((treatment) => ({
+    params: {
+      slug: treatment.id,
+    },
+    props: { treatment },
+  }));
+}
+
+const { treatment } = Astro.props;
+
+const categories = await getCollection("categories");
+const filteredCategories = categories.filter(category => category.data.treatment.id === treatment.id)
+---
+
+<BaseLayout>
+  <section class="page-header">
+    <div
+      class="page-header__bg"
+      style="background-image: url(/static/assets/images/backgrounds/services.png);"
+    >
+    </div>
+    <div class="container">
+      <div class="page-header__inner">
+        <ul class="thm-breadcrumb list-unstyled">
+          <li><a href="/">Home</a></li>
+          <li><span>/</span></li>
+          <li>{treatment.data.title}</li>
+        </ul>
+        <h2>{treatment.data.title}</h2>
+      </div>
+    </div>
+  </section>
+  <section class="services-page">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="section-title__tagline">Our services</span>
+        <h2 class="section-title__title">What We’re Offering</h2>
+      </div>
+
+      <div class="row">
+        {
+          filteredCategories
+            .filter((category) => !category.data.nisfl)
+            .map((category) => (
+              <ServiceCard category={category} treatment={treatment} />
+            ))
+        }
+
+        {
+          filteredCategories.filter(category => category.data.nisfl).length > 0 && (
+            <h1 class="section-title__title2">
+              Non-Invasive Slimming and Fat Loss Treatment
+            </h1>
+          )
+        }
+
+        {
+          filteredCategories
+            .filter((category) => category.data.nisfl)
+            .map((category) => (
+              <ServiceCard category={category} treatment={treatment} />
+            ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

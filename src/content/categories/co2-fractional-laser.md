@@ -16,6 +16,10 @@ services:
     description: Target stubborn melasma and deep pigmentation with our CO2 Fractional Laser. This advanced treatment penetrates the skin to break down dark patches while boosting collagen and cellular renewal. Ideal for clients struggling with hormonal or sun-induced melasma, it brightens and evens out skin tone with lasting results.
     price: ₱12,999 per session
     status: true
+  - title: Keloids & Scars
+    description: Minimize the appearance of raised scars and keloids with precision laser technology. CO2 Fractional Laser softens scar tissue, reduces redness, and smooths out uneven skin texture over time. Best for surgical scars, acne scars, or trauma-induced keloids. Price varies depending on size and area treated.
+    price: Starts at ₱6,499
+    status: true  
 nisfl: true
 status: true
 featured: false

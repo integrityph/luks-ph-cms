@@ -16,6 +16,18 @@ services:
     description: There are many variations of passages of available but the majority have in that some form by injected randomised words which don’t look even as slightly believable now.
     price: ₱ 950
     status: false
+  - title: Arms
+    description: There are many variations of passages of available but the majority have in that some form by injected randomised words which don’t look even as slightly believable now.
+    price: ₱ 1,500
+    status: false
+  - title: Arms
+    description: There are many variations of passages of available but the majority have in that some form by injected randomised words which don’t look even as slightly believable now.
+    price: ₱ 750
+    status: false
+  - title: Arms
+    description: There are many variations of passages of available but the majority have in that some form by injected randomised words which don’t look even as slightly believable now.
+    price: ₱ 3,500
+    status: false
 nisfl: false
 status: true
 featured: false

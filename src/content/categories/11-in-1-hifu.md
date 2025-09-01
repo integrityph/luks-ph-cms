@@ -16,6 +16,14 @@ services:
     description: Achieve a lifted, firmer, and more youthful appearance with our advanced 11-in-1 HIFU Full Face treatment. This non-invasive procedure targets deep layers of skin to stimulate collagen production, reduce fine lines, and improve skin elasticity. Perfect for contouring the jawline, lifting the cheeks, and tightening sagging skin — all without downtime.
     price: ₱13,000 per session
     status: true
+  - title: Tummy
+    description: Sculpt and tighten your midsection with our 11-in-1 HIFU Tummy treatment. This powerful technology penetrates deep into the skin to break down stubborn fat cells and firm loose skin, giving you a more toned, defined, and contoured abdomen. Ideal for post-pregnancy bellies or those targeting belly fat without surgery.
+    price: ₱18,000 per session
+    status: true
+  - title: Arms
+    description: Say goodbye to flabby arms and hello to tighter, smoother skin with our 11-in-1 HIFU Arms treatment. Designed to target sagging skin and reduce localized fat, this treatment sculpts your upper arms, improves skin texture, and delivers long-lasting toning effects — no needles, no downtime.
+    price: ₱15,000 per session
+    status: true
 nisfl: true
 status: true
 featured: false

@@ -16,6 +16,18 @@ services:
     description: (Single Dose of Glutathione 1200mg and 500mg VitC, 1 vial of Liporone)
     price: ₱ 1,699
     status: true
+  - title: Luxury Haven Whitening Drip
+    description: (Double Dose of Glutathione 2400mg and 500mg VitC, 1 vial of Liporone)
+    price: ₱ 2,899
+    status: true
+  - title: Infinite Luxe Immunity Drip
+    description: (Single Dose of Glutathione 1200mg and 500mg VitC, 1 vial of Stemcell and Liporone)
+    price: ₱ 3,799
+    status: true
+  - title: Weight Loss and Whitening Drip
+    description: (Single Dose of Glutathione 1200mg and 500mg VitC, 1 vial of Liporone)
+    price: ₱ 4,999
+    status: true
 nisfl: false
 status: true
 featured: false

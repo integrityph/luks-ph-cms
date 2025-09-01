@@ -10,7 +10,7 @@ export async function getStaticPaths() {
   const paths = await Promise.all(
     services.map(async (treatment) => {
       const filteredCategory = categories.filter(
-        (category) => category.data.treatment.id === treatment.id
+        (category) => (category.data.treatment.id === treatment.id) && category.data.status
       );
 
       return filteredCategory.map((category) => ({
@@ -27,7 +27,6 @@ export async function getStaticPaths() {
 }
 
 const { category } = Astro.props;
-console.log(category);
 ---
 
 <BaseLayout>
@@ -83,7 +82,7 @@ console.log(category);
                 data-grp-name="faq-one-accrodion"
               >
                 {
-                  category.data.services.map((service) => (
+                  category.data.services.filter(service => service.status).map((service) => (
                     <ServiceAccordion service={service} />
                   ))
                 }

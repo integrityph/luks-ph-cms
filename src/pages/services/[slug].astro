@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 const { treatment } = Astro.props;
 
 const categories = await getCollection("categories");
-const filteredCategories = categories.filter(category => category.data.treatment.id === treatment.id)
+const filteredCategories = categories.filter(category => (category.data.treatment.id === treatment.id) && category.data.status )
 ---
 
 <BaseLayout>

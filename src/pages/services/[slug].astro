@@ -19,7 +19,7 @@ const categories = await getCollection("categories");
 const filteredCategories = categories.filter(category => (category.data.treatment.id === treatment.id) && category.data.status )
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={treatment.data.title}>
   <section class="page-header">
     <div
       class="page-header__bg"

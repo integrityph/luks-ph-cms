@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 const { category } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={category.data.title}>
   <section class="page-header">
     <div
       class="page-header__bg"

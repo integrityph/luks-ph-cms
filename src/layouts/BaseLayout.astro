@@ -1,5 +1,6 @@
 ---
 const { pathname } = Astro.url;
+const { pageTitle } = Astro.props;
 ---
 
 <!doctype html>
@@ -8,7 +9,7 @@ const { pathname } = Astro.url;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Luks Spa and Aesthetics " />
-    <title>Home</title>
+    <title>{pageTitle}</title>
     <!-- favicons Icons -->
     <link
       rel="apple-touch-icon"

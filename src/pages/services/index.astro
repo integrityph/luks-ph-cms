@@ -54,8 +54,8 @@ const services = await getCollection("services");
                   <div class="services-one__img-box">
                     <div class="services-one__img">
                       <img
-                        src="../../static/assets/images/services/Emerald_Laser_Lipo.png"
-                        alt=""
+                        src={service.data.image.src}
+                        alt={service.data.image.alt}
                       />
                     </div>
                     <div class="services-one__icon">

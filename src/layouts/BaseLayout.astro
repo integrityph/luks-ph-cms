@@ -1,7 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
-
-const { pathname }  = Astro.url;
+const { pathname } = Astro.url;
 ---
 
 <!doctype html>
@@ -161,7 +159,8 @@ const { pathname }  = Astro.url;
                     <div class="text">
                       <p>
                         <a href="reservations@lukscare.com"
-                          >reservations@lukscare.com</a>
+                          >reservations@lukscare.com</a
+                        >
                       </p>
                     </div>
                   </li>
@@ -225,13 +224,22 @@ const { pathname }  = Astro.url;
                   <li class={pathname === "/" ? "current" : null}>
                     <a href="/">Home </a>
                   </li>
-                  <li class={pathname.startsWith("/services") || pathname.startsWith("/services") ? `dropdown current` : "dropdown"}>
+                  <li
+                    class={pathname.startsWith("/services") ||
+                    pathname.startsWith("/services")
+                      ? `dropdown current`
+                      : "dropdown"}
+                  >
                     <a href="/services/">Our Services</a>
                   </li>
-                  <li class={pathname.startsWith("/gallery") ? "current" : null}>
+                  <li
+                    class={pathname.startsWith("/gallery") ? "current" : null}
+                  >
                     <a href="/gallery/">Gallery</a>
                   </li>
-                  <li class={pathname.startsWith("/contact") ? "current" : null}>
+                  <li
+                    class={pathname.startsWith("/contact") ? "current" : null}
+                  >
                     <a href="/contact/">Contact</a>
                   </li>
                 </ul>
@@ -358,7 +366,8 @@ const { pathname }  = Astro.url;
                 >
                   <p class="site-footer__bottom-text">
                     © Copyright {new Date().getFullYear()} by <a href="#"
-                      >Luks Spa & Aesthetics</a>
+                      >Luks Spa & Aesthetics</a
+                    >
                   </p>
                 </div>
               </div>

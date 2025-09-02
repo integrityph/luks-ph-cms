@@ -374,51 +374,59 @@ const randomizedServices = services
       </div>
       <div class="row" id="services">
         {
-          randomizedServices.map((service, index) => index < 3 && (
-            <div
-              class="col-xl-4 col-lg-4 wow fadeInUp animated"
-              data-wow-delay="300ms"
-              style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;"
-            >
-              <div class="services-one__single">
-                <div class="services-one__single-inner">
-                  <div class="services-one__shape-1">
-                    <img
-                      src="../../static/assets/images/shapes/services-one-shape-1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="services-one__shape-2">
-                    <img
-                      src="../../static/assets/images/shapes/services-one-shape-2 4.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="services-one__img-box">
-                    <div class="services-one__img">
-                      <img
-                        src="../../static/assets/images/services/Emerald_Laser_Lipo.png"
-                        alt=""
-                      />
+          randomizedServices.map(
+            (service, index) =>
+              index < 3 && (
+                <div
+                  class="col-xl-4 col-lg-4 wow fadeInUp animated"
+                  data-wow-delay="300ms"
+                  style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;"
+                >
+                  <div class="services-one__single">
+                    <div class="services-one__single-inner">
+                      <div class="services-one__shape-1">
+                        <img
+                          src="../../static/assets/images/shapes/services-one-shape-1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="services-one__shape-2">
+                        <img
+                          src="../../static/assets/images/shapes/services-one-shape-2 4.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="services-one__img-box">
+                        <div class="services-one__img">
+                          <img
+                            src="../../static/assets/images/services/Emerald_Laser_Lipo.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="services-one__icon">
+                          <span class="icon-lotus" />
+                        </div>
+                      </div>
+                      <h3 class="services-one__title">
+                        <a href={`/services/${service.id}`}>
+                          {service.data.title}
+                        </a>
+                      </h3>
+                      <p class="services-one__text" />
+                      <div class="services-one__btn-box">
+                        <a
+                          href={`/services/${service.id}`}
+                          class="services-one__btn"
+                        >
+                          See More
+                          <i class="icon-right-arrow" />
+                        </a>
+                      </div>
                     </div>
-                    <div class="services-one__icon">
-                      <span class="icon-lotus" />
-                    </div>
-                  </div>
-                  <h3 class="services-one__title">
-                    <a href={`/services/${service.id}`}>{service.data.title}</a>
-                  </h3>
-                  <p class="services-one__text" />
-                  <div class="services-one__btn-box">
-                    <a href={`/services/${service.id}`} class="services-one__btn">
-                      See More
-                      <i class="icon-right-arrow" />
-                    </a>
                   </div>
                 </div>
-              </div>
-            </div>
-          ))
+              )
+          )
         }
       </div>
       <div class="welcome-one__btn-box1">
@@ -641,7 +649,6 @@ const randomizedServices = services
       <div class="testimonial-one__bottom">
         <div
           class="testimonial-one__carousel thm-owl__carousel owl-theme owl-carousel"
-          data-owl-options='{"items":1,"margin":30,"smartSpeed":700,"loop":true,"autoplay":6000,"nav":false,"dots":false,"navText":["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],"responsive":{"0":{"items":1},"768":{"items":2},"992":{"items": 2},"1200":{"items": 3}}}'
         >
           <!--Testimonial One Single Start-->
           <div class="item">
@@ -905,4 +912,27 @@ const randomizedServices = services
       </div>
     </div>
   </section>
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        margin: 30,
+        smartSpeed: 700,
+        loop: true,
+        autoplay: 6000,
+        nav: false,
+        dots: false,
+        navText: [
+          '<span class="icon-left-arrow"></span>',
+          '<span class="icon-right-arrow"></span>',
+        ],
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          992: { items: 2 },
+          1200: { items: 3 },
+        },
+      });
+    });
+  </script>
 </BaseLayout>

@@ -1,4 +1,7 @@
 ---
+import Image from "astro/components/Image.astro";
+import shapeOne from './public/static/assets/images/shapes/services-one-shape-1.png'
+import shapeTwo from './public/static/assets/images/shapes/services-one-shape-2 4.png'
 const { category, treatment } = Astro.props;
 ---
 
@@ -10,20 +13,14 @@ const { category, treatment } = Astro.props;
   <div class="services-one__single">
     <div class="services-one__single-inner">
       <div class="services-one__shape-1">
-        <img
-          src="/static/assets/images/shapes/services-one-shape-1.png"
-          alt=""
-        />
+        <Image src={shapeOne} alt="" loading={'lazy'} />
       </div>
       <div class="services-one__shape-2">
-        <img
-          src="/static/assets/images/shapes/services-one-shape-2 4.png"
-          alt=""
-        />
+        <Image src={shapeTwo} alt="" loading={'lazy'} />
       </div>
       <div class="services-one__img-box">
         <div class="services-one__img">
-          <img src={category.data.icon.src} alt="" />
+          <Image src={category.data.icon.src} alt="" loading={'lazy'} width={196} height={196}/>
         </div>
         <div class="services-one__icon">
           <span class="icon-lotus"></span>

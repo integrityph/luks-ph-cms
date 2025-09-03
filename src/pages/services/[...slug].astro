@@ -2,6 +2,9 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ServiceAccordion from "../../component/ServiceAccordion.astro";
+import Image from "astro/components/Image.astro";
+import shapeOne from './public/static/assets/images/shapes/services-one-shape-1.png'
+import shapeTwo from './public/static/assets/images/shapes/services-one-shape-2 4.png'
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
@@ -65,6 +68,7 @@ const { category } = Astro.props;
               <img
                 src={category.data.photo.src}
                 alt=""
+                loading="lazy"
               />
             </div>
 

@@ -4,11 +4,11 @@ import { z, defineCollection, reference } from "astro:content";
 // Define a `loader` and `schema` for each collection
 const services = defineCollection({
   loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/services" }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     image: z.object({
-      src: z.string(),
+      src: image(),
       alt: z.string()
     })
   }),
@@ -16,20 +16,20 @@ const services = defineCollection({
 
 const categories = defineCollection({
   loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/categories" }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     treatment: reference("services"),
     banner: z.object({
-      src: z.string(),
+      src: image(),
       alt: z.string(),
     }),
     photo: z.object({
-      src: z.string(),
+      src: image(),
       alt: z.string(),
     }),
     icon: z.object({
-      src: z.string(),
+      src: image(),
       alt: z.string(),
     }),
     services: z.array(

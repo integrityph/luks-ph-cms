@@ -3,13 +3,13 @@ title: Underarm Care
 description: Achieve your ideal silhouette with our advanced body slimming treatments, combining the latest technology with expert care. At Luks Spa and Aesthetics, we offer non-invasive solutions designed to sculpt and tone your body, targeting stubborn fat and enhancing your natural contours. Our state-of-the-art procedures are customized to meet your specific goals, ensuring effective and visible results. Enjoy a transformative experience in our luxurious setting, and step out with renewed confidence and a beautifully refined figure.
 treatment: spa-treatments
 banner:
-  src: /static/images/uploads/underarm-care.png
+  src: /public/static/images/uploads/underarm-care.png
   alt: ''
 photo:
-  src: /static/images/uploads/Underarm-Care.png
+  src: /public/static/images/uploads/Underarm-Care.png
   alt: ''
 icon:
-  src: /static/images/uploads/Underarm-care 1.png
+  src: /public/static/images/uploads/Underarm-care 1.png
   alt: ''
 services:
   - title: Instant White (power peel, carbon doll laser, IPL Hair Removal)

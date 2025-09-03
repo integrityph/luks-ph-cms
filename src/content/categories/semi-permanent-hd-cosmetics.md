@@ -3,13 +3,13 @@ title: Semi-Permanent HD Cosmetics
 description: Enhance your natural beauty with skin and makeup solutions that last. Our semi-permanent HD treatments are designed to give a flawless, low-maintenance look using Korean techniques and skin-friendly formulations — perfect for those who want to wake up looking fresh and polished every day.
 treatment: spa-treatments
 banner:
-  src: /static/images/uploads/Where to get Semi-Permanent Makeup.png
+  src: /public/static/images/uploads/Where to get Semi-Permanent Makeup.png
   alt: ''
 photo:
-  src: /static/images/uploads/OIP (2).jpg
+  src: /public/static/images/uploads/OIP (2).jpg
   alt: ''
 icon:
-  src: /static/images/uploads/OIP (3).jpg
+  src: /public/static/images/uploads/OIP (3).jpg
   alt: ''
 services:
   - title: Korean BB Glow Infusion

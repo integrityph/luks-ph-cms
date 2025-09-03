@@ -3,13 +3,13 @@ title: Botox
 description: A versatile injectable treatment that temporarily relaxes targeted muscles to reduce wrinkles, contour the face and body, and manage excessive sweating. Botox is quick, effective, and requires little to no downtime — making it a go-to solution for both aesthetic and medical concerns.
 treatment: spa-treatments
 banner:
-  src: /static/images/uploads/Botulinum.png
+  src: /public/static/images/uploads/Botulinum.png
   alt: ''
 photo:
-  src: /static/images/uploads/Botulinum (1).png
+  src: /public/static/images/uploads/Botulinum (1).png
   alt: ''
 icon:
-  src: /static/images/uploads/bot.png
+  src: /public/static/images/uploads/bot.png
   alt: ''
 services:
   - title: Sweatox – Underarm Hyperhidrosis

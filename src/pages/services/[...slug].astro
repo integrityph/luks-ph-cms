@@ -3,8 +3,6 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ServiceAccordion from "../../component/ServiceAccordion.astro";
 import Image from "astro/components/Image.astro";
-import shapeOne from './public/static/assets/images/shapes/services-one-shape-1.png'
-import shapeTwo from './public/static/assets/images/shapes/services-one-shape-2 4.png'
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
@@ -36,7 +34,7 @@ const { category } = Astro.props;
   <section class="page-header">
     <div
       class="page-header__bg"
-      style={`background-image: url('${category.data.banner.src}');`}
+      style={`background-image: url('${category.data.banner.src.src}');`}
     >
     </div>
     <div class="container">
@@ -65,7 +63,7 @@ const { category } = Astro.props;
               data-wow-duration="2500ms"
               style="visibility: visible; animation-duration: 2500ms; animation-delay: 100ms; animation-name: fadeInDown;"
             >
-              <img
+              <Image
                 src={category.data.photo.src}
                 alt=""
                 loading="lazy"

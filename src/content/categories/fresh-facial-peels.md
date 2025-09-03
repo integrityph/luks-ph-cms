@@ -3,13 +3,13 @@ title: Fresh Facial & Peels
 description: Reveal your skin's natural radiance with our luxurious facial treatments, expertly designed to rejuvenate and enhance your complexion. At Luks Spa and Aesthetics, we blend advanced skincare technology with personalized care to deliver transformative results. Each facial is crafted to address your unique skin needs, from deep cleansing and hydration to age-defying therapies. Our skilled aestheticians use only the finest products, ensuring that every treatment leaves your skin glowing, refreshed, and beautifully revitalized. Experience the ultimate in facial care, and unveil a more luminous you.
 treatment: spa-treatments
 banner:
-  src: /static/images/uploads/Fresh-Facial-&-Peels.png
+  src: /public/static/images/uploads/Fresh-Facial-&-Peels.png
   alt: ''
 photo:
-  src: /static/images/uploads/Fresh-Facial-&-Peels photo.png
+  src: /public/static/images/uploads/Fresh-Facial-&-Peels photo.png
   alt: ''
 icon:
-  src: /static/images/uploads/Facial 1.png
+  src: /public/static/images/uploads/Facial 1.png
   alt: ''
 services:
   - title: Hi-Precision Skin Analysis

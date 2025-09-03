@@ -3,13 +3,13 @@ title: CO2 Fractional Laser
 description: A powerful skin resurfacing treatment that uses laser technology to target deep layers of the skin, stimulating collagen production and promoting skin regeneration. CO2 Fractional Laser effectively treats various skin concerns such as pigmentation, acne scars, keloids, wrinkles, and uneven texture — revealing smoother, clearer, and younger-looking skin with minimal downtime.
 treatment: laser-treatments
 banner:
-  src: /static/images/uploads/OIP (1).jpg
+  src: /public/static/images/uploads/OIP (1).jpg
   alt: ''
 photo:
-  src: /static/images/uploads/OIP (1).jpg
+  src: /public/static/images/uploads/OIP (1).jpg
   alt: ''
 icon:
-  src: /static/images/uploads/OIP.jpg
+  src: /public/static/images/uploads/OIP.jpg
   alt: ''
 services:
   - title: Melasma

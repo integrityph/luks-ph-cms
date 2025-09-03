@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css'
 const { pathname } = Astro.url;
 const { pageTitle } = Astro.props;
 ---
@@ -35,18 +36,6 @@ const { pageTitle } = Astro.props;
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="/static/assets/vendors/bootstrap/css/bootstrap.min.css"
@@ -129,13 +118,6 @@ const { pageTitle } = Astro.props;
       href="/static/assets/vendors/twenty-twenty/twentytwenty.css"
     />
     <!-- template styles -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
-      integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="/static/assets/css/mellis.css" />
     <link rel="stylesheet" href="/static/assets/css/mellis-responsive.css" />
   </head>
@@ -516,7 +498,7 @@ const { pageTitle } = Astro.props;
       src="/static/assets/vendors/twenty-twenty/jquery.event.move.js"></script>
     <script
       is:inline
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+      src="/static/assets/vendors/nice-select/jquery.nice-select.min.js"
       integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>

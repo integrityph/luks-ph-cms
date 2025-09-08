@@ -30,13 +30,13 @@ const { category, treatment } = Astro.props;
         </div>
       </div>
       <h3 class="services-one__title">
-        <a href={`${treatment.id}/${category.id}`}>
+        <a href={`${category.id}`}>
           {category.data.title}
         </a>
       </h3>
       <p class="services-one__text"></p>
       <div class="services-one__btn-box">
-        <a href={`${treatment.id}/${category.id}`} class="services-one__btn">
+        <a href={`${category.id}`} class="services-one__btn">
           Book now
           <i class="icon-right-arrow"></i>
         </a>

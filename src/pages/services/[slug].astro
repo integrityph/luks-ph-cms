@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import ServiceCard from "../../component/ServiceCard.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ServiceCard from "@/component/ServiceCard.astro";
 
 export async function getStaticPaths() {
   const services = await getCollection("services");

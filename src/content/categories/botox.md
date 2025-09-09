@@ -37,7 +37,7 @@ services:
     price: ₱250 per unit
     status: true
 nisfl: true
-status: true
+status: false
 featured: false
 ---
 

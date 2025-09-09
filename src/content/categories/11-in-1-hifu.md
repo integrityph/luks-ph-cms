@@ -25,7 +25,7 @@ services:
     price: ₱15,000 per session
     status: true
 nisfl: true
-status: false
+status: true
 featured: false
 ---
 

@@ -76,7 +76,23 @@ services:
     description: This innovative treatment uses advanced microvibration technology to deliver a non-invasive, full-body rejuvenation. Endosphères Therapy works by stimulating the skin and underlying tissues, enhancing blood circulation, reducing the appearance of cellulite, and toning muscles. The therapy's unique combination of mechanical compression and vibration helps to detoxify the body, relieve muscle tension, and promote lymphatic drainage, leaving you with smoother, firmer, and more youthful-looking skin.
     price: ₱ 2,499
     status: true
-nisfl: false
+  - title: Aromatherapy (60 mins)
+    description: Immerse yourself in pure relaxation with our Aromatherapy. a soothing treatment designed to restore balance to the mind, body, and spirit.  This gentle ritual uses warm, aromatic herbal balls infused with natural essential oils. As the aroma balls are softly pressed and rolled over the skin, the heat releases the therapeutic scents and healing properties of the botanicals — easing tension, improving circulation, and calming the senses.  Each session is personalized with carefully selected essential oil blends to suit your mood and wellness needs, creating a deeply nurturing and sensory spa experience.
+    price: '1250'
+    status: true
+  - title: Aromatherapy (90 mins)
+    description: Immerse yourself in pure relaxation with our Aromatherapy, a soothing treatment designed to restore balance to the mind, body, and spirit.  This gentle ritual uses warm, aromatic herbal balls infused with natural essential oils. As the aroma balls are softly pressed and rolled over the skin, the heat releases the therapeutic scents and healing properties of the botanicals — easing tension, improving circulation, and calming the senses.  Each session is personalized with carefully selected essential oil blends to suit your mood and wellness needs, creating a deeply nurturing and sensory spa experience.
+    price: '1480'
+    status: true
+  - title: Hot Oil Massage (60 mins)
+    description: Indulge in deep relaxation with our Hot Oil Full Body Massage, a rejuvenating treatment that melts away tension and nourishes the body from head to toe.  Warm, aromatic oils are gently massaged into the skin using slow, rhythmic strokes to ease muscle stiffness, improve circulation, and calm the mind. The soothing heat of the oil penetrates deeply into tired muscles, restoring balance and leaving your skin silky-smooth and beautifully hydrated.  Every session is tailored to your comfort level and desired pressure, creating the perfect harmony of relaxation and renewal.
+    price: '1250'
+    status: true
+  - title: Hot Oil Massage (90 mins)
+    description: Indulge in deep relaxation with our Hot Oil Full Body Massage, a rejuvenating treatment that melts away tension and nourishes the body from head to toe.  Warm, aromatic oils are gently massaged into the skin using slow, rhythmic strokes to ease muscle stiffness, improve circulation, and calm the mind. The soothing heat of the oil penetrates deeply into tired muscles, restoring balance and leaving your skin silky-smooth and beautifully hydrated.  Every session is tailored to your comfort level and desired pressure, creating the perfect harmony of relaxation and renewal.
+    price: '1480'
+    status: true
+nisfl: true
 status: true
 featured: false
 ---

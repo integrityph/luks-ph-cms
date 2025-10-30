@@ -36,6 +36,10 @@ services:
     description: Additional Botox units for touch-ups or enhanced coverage based on your aesthetic goals.
     price: ₱250 per unit
     status: true
+  - title: Necktox
+    description: Rediscover youthful elegance with our NeckTox Treatment, a rejuvenating procedure designed to smooth, lift, and refine the delicate skin of the neck area.  Using gentle, strategically placed micro-injections of botulinum toxin, this treatment relaxes overactive neck muscles — reducing the appearance of lines, wrinkles, and skin banding. The result is a smoother, firmer, and more refined neckline with a naturally lifted appearance.
+    price: starts at 15,000
+    status: true
 nisfl: true
 status: true
 featured: false
